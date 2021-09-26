@@ -30,5 +30,6 @@ jobs:
       with:
          image: flora1993/myblogdocker
          registry: docker.io
+         
          username: ${{ secrets.DOCKER_USERNAME }}
          password: ${{ secrets.DOCKER_PASSWORD }}
