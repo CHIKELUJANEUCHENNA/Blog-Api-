@@ -19,7 +19,6 @@ import java.util.List;
 public class LoginController {
     private final UserRepository userRepository;
     private final UserService userService;
-
     @Autowired
     public LoginController(UserRepository userRepository, UserService userService) {
         this.userRepository = userRepository;
