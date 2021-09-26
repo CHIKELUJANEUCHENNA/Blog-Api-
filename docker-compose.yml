@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    environment:
+      {POSTGRES_PASSWORD=23,
+      POSTGRES_DB=mytaskweek9}
+    ports:
+      - "5432"
+
+  app:
+    image: week-9-task
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
