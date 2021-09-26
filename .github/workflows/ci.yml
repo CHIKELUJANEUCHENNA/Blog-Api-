@@ -29,6 +29,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
          image: flora1993/myblogdocker
+         
          registry: docker.io
          
          username: ${{ secrets.DOCKER_USERNAME }}
